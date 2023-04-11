@@ -248,17 +248,24 @@ button:hover {
   background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   body {
     align-items: baseline;
   }
   .card {
-    align-items: normal;
+    width: 100%;
     flex-direction: column;
     border-radius: 0 0 30px 30px;
   }
   .result {
+    width: 100%;
     border-radius: 0 0 30px 30px;
+  }
+  .summary {
+    width: 100%;
+  }
+  .summary-score {
+    width: calc(100% - 80px);
   }
   .result .review {
     width: calc(100% - 100px);
