@@ -16,18 +16,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## My process
 
-I created a web page that displays a summary of test results fetched from a JSON file. The page includes a "Your Result" section that shows the user's average score, as well as a "Summary" section that displays individual scores by category. The scores are presented in a visually appealing way using icons and colors.
-
-To achieve this, I used JavaScript to fetch the data from the JSON file and calculate the average score. I then dynamically created HTML elements to display the scores by category. Finally, I added a button for users to continue after viewing their results.
-
-Overall, this web page provides an interactive and engaging way for users to review their test results and learn from their performance.
+I start by create HTML and then I write the CSS, in my CSS I define some variables (Typo, Colors) and I style the card.
 
 ### Built with
 
 - HTML
 - CSS
-- JavaScript
-- JSON file
 - Visual Studio Code
 
 ### Useful resources
