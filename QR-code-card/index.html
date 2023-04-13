@@ -16,7 +16,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Frontend Mentor | QR code component</title>
+    
     <style>
       .attribution {
         font-size: 11px;
@@ -29,27 +31,32 @@
     </style>
   </head>
   <body>
-    <section class="card">
-      <div class="main-container">
-        <img
-          src="images/image-qr-code.png"
-          alt="QR-Code"
-          class="container-qr-code"
-        />
-        <div class="container-text">
-          <h3>Improve your front-end skills by building projects</h3>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
+    <main role="main">
+      <section class="card" role="region" aria-labelledby="qr-heading">
+        <div class="main-container">
+          <img
+            src="images/image-qr-code.png"
+            alt="QR-Code"
+            class="container-qr-code"
+          />
+          <div class="container-text">
+            <h3>Improve your front-end skills by building projects</h3>
+            <p>
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
         </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+        . Coded by <a href="#">Léon Gallet</a>.
       </div>
-    </section>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Léon Gallet</a>.
-    </div>
+    </footer>
   </body>
 </html>
