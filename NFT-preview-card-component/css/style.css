@@ -1,0 +1,147 @@
+:root {
+  /*Primary Colors*/
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /*Neutral Colors*/
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-main-shade: hsl(217, 54%, 10%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /*Typography*/
+  --font-family: "Outfit", sans-sérif;
+  --light: 300;
+  --regular: 400;
+  --semi-bold: 600;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--very-dark-blue-main);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 350px;
+  width: 100%;
+  height: 596px;
+  border-radius: 20px;
+  padding: 23px;
+  background-color: var(--very-dark-blue-card);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  -webkit-box-shadow: 0 15px 0 15px var(--very-dark-blue-main-shade);
+  -moz-box-shadow: 0 15px 0 15px var(--very-dark-blue-main-shade);
+  box-shadow: 0 15px 0 15px var(--very-dark-blue-main-shade);
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.view {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 248, 50%);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.1s;
+  cursor: pointer;
+}
+
+.view:hover {
+  opacity: 1;
+}
+
+.nft {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: var(--semi-bold);
+  letter-spacing: 1%;
+  color: var(--white);
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 139.5%;
+  color: var(--soft-blue);
+}
+
+.infos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 105px;
+  display: flex;
+}
+
+.cost {
+  color: var(--cyan);
+  gap: 6px;
+}
+
+.time-rmn {
+  color: var(--soft-blue);
+  gap: 9px;
+}
+
+hr {
+  width: 100%;
+  border-color: var(--soft-blue);
+  opacity: 50%;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.creator img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--white);
+  border-radius: 100px;
+}
+
+.creator p {
+  font-size: 18px;
+  color: var(--soft-blue);
+}
+
+.creator span {
+  color: var(--white);
+}
