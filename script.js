@@ -1,6 +1,7 @@
 const folders = [
   "Interactive-rating-component",
   "NFT-preview-card-component",
+  "Order-summary-component",
   "Product-preview-card-component",
   "QR-code-card",
   "Results-summary-component",
