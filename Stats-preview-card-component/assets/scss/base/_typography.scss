@@ -1,0 +1,39 @@
+h1,
+h2 {
+  font-weight: map-get($font-weight, "bold");
+  color: $white;
+  margin: 0;
+}
+
+h1 {
+  width: 100%;
+  font-size: pxToRem(36);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: pxToRem(24);
+  letter-spacing: 2.5%;
+}
+
+span {
+  color: $accent;
+}
+
+p {
+  width: 90%;
+  color: $main-p;
+  font-size: $font-size;
+  line-height: 168%;
+  margin-bottom: 84px;
+}
+
+.stats {
+  &--stat p {
+    font-family: map-get($font, "Lexend-Deca");
+    font-size: pxToRem(13);
+    color: $stat-headings;
+    margin: 0;
+  }
+}

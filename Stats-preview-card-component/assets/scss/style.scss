@@ -1,0 +1,18 @@
+// Import font-family
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+// Import vendors
+@import "vendors/normalize";
+
+// Import utils
+@import "utils/functions";
+@import "utils/variables";
+
+// Import base
+@import "base/main";
+@import "base/typography";
+
+// Import layout
+
+// Import components
+@import "components/card";

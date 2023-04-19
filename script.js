@@ -5,6 +5,7 @@ const folders = [
   "Product-preview-card-component",
   "QR-code-card",
   "Results-summary-component",
+  "Stats-preview-card-component",
 ];
 const list = document.querySelector("ul");
 
