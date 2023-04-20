@@ -1,0 +1,18 @@
+h1,
+h2 {
+  font-family: map-get($font, "Big-Shoulders-Display");
+  font-size: pxToRem(40);
+  font-weight: map-get($font-weight, "bold");
+  color: $very-light-gray;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+p,
+button {
+  font-family: map-get($font, "Lexend-Deca");
+  font-size: $font-size;
+  font-weight: map-get($font-weight, "regular");
+  line-height: 165%;
+}

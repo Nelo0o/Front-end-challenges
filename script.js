@@ -6,6 +6,7 @@ const folders = [
   "QR-code-card",
   "Results-summary-component",
   "Stats-preview-card-component",
+  "3-column-preview-card-component",
 ];
 const list = document.querySelector("ul");
 

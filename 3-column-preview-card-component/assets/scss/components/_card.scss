@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  border-radius: 5px;
+
+  &__cards {
+    max-width: pxToRem(307);
+    width: 100%;
+    height: pxToRem(500);
+    padding: 48px 50px 48px 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    img {
+      max-width: pxToRem(63.92);
+      height: auto;
+      margin-bottom: 41.9px;
+    }
+
+    p {
+      color: $tp-white;
+      margin-bottom: 64px;
+    }
+
+    button {
+      width: pxToRem(146);
+      height: pxToRem(48.12);
+      border: 2px solid $very-light-gray;
+      border-radius: 100px;
+      color: $very-light-gray;
+      transition: background 0.3s;
+    }
+  }
+
+  .sedans {
+    background-color: $orange;
+    border-radius: 5px 0 0 5px;
+
+    button:hover {
+      background-color: $very-light-gray;
+      color: $orange;
+    }
+  }
+
+  .suvs {
+    background-color: $dark-cyan;
+
+    button:hover {
+      background-color: $very-light-gray;
+      color: $dark-cyan;
+    }
+  }
+
+  .luxury {
+    background-color: $very-dark-cyan;
+    border-radius: 0 5px 5px 0;
+
+    button:hover {
+      background-color: $very-light-gray;
+      color: $very-dark-cyan;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column;
+
+    .sedans {
+      border-radius: 5px 5px 0 0;
+    }
+
+    .luxury {
+      border-radius: 0 0 5px 5px;
+    }
+  }
+}
