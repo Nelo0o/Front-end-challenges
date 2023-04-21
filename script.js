@@ -2,12 +2,12 @@ const folders = [
   "Interactive-rating-component",
   "NFT-preview-card-component",
   "Order-summary-component",
+  "Profile-card-component",
   "Product-preview-card-component",
   "QR-code-card",
   "Results-summary-component",
   "Stats-preview-card-component",
   "3-column-preview-card-component",
-  "Profile-card-component",
 ];
 const list = document.querySelector("ul");
 
