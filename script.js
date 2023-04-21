@@ -7,6 +7,7 @@ const folders = [
   "Results-summary-component",
   "Stats-preview-card-component",
   "3-column-preview-card-component",
+  "Profile-card-component",
 ];
 const list = document.querySelector("ul");
 
