@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+@import "functions";
+
+// Colors
+
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+// Font
+
+$font-size: pxToRem(15);
+$font-family: 'League Spartan', sans-serif;
+$font-weight: (
+        regular: 400,
+        medium: 500,
+        bold: 700,
+);
+
+// Grid params
+
+$container: 1100px;
+$grid-columns: 12;
+$grid-gap: 20px;
+
+// Breakpoints
+
+$breakpoints: (
+        md: 768px,
+        lg: 1280px,
+);
+
+// Grid
+
+$min: 0;
+
+$max: calc(
+        (#{$container} - #{$grid-gap} * (#{$grid-columns} - 1)) / #{$grid-columns}
+);
+
+.grid {
+  @media screen and (min-width: map-get($breakpoints, "md")) {
+    display: grid;
+    gap: $grid-gap;
+    grid: auto-flow dense / repeat($grid-columns, minmax($min, $max));
+    justify-content: center;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $font-family;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-bot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bg-top-mobile {
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: map-get($breakpoints, "md")) {
+  .bg-top,
+  .bg-bot {
+    display: none;
+  }
+
+  .bg-top-mobile {
+    display: block;
+  }
+
+  .bg-top-mobile {
+    top: 0;
+  }
+}
+
+.head {
+  margin-top: 90px;
+  grid-column: 1 / span 5;
+
+  h1 {
+    color: $very-dark-magenta;
+    font-size: pxToRem(50);
+    line-height: 97%;
+    letter-spacing: 0.15px;
+    font-weight: map-get($font-weight, "bold");
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: $dark-grayish-magenta;
+    font-size: pxToRem(17);
+    font-weight: map-get($font-weight, "medium");
+    line-height: 140%;
+    letter-spacing: 0.1px;
+    max-width: 425px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "md")) {
+    margin-top: 80px;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+}
+
+.container-rating {
+  grid-column: 8 / span 5;
+  align-self: end;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .rating {
+    max-width: 445px;
+    width: 100%;
+    height: 55px;
+    background-color: $light-grayish-magenta;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &:nth-child(1) {
+      position: relative;
+      right: 90px;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      right: 45px;
+    }
+
+    .stars {
+      margin-left: 30px;
+    }
+
+    .review {
+      p {
+        color: $very-dark-magenta;
+        font-weight: map-get($font-weight, "bold");
+      }
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "md")) {
+    margin-top: 30px;
+    align-items: center;
+
+    .rating {
+      flex-direction: column;
+      height: auto;
+
+      &:nth-child(n) {
+        left: 0;
+        gap: 5px;
+        padding: 15px;
+      }
+
+      .stars {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.container-card {
+  grid-column: 1 / span 12;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+
+  .card {
+    max-width: 350px;
+    height: auto;
+    background-color: $very-dark-magenta;
+    border-radius: 7px;
+    padding: 40px 30px 40px 30px;
+
+    &:nth-child(2) {
+      position: relative;
+      top: 10px;
+    }
+
+    &:nth-child(3) {
+      position: relative;
+      top: 20px;
+    }
+
+    &__head {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 25px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+      }
+
+      &__name {
+        p {
+          color: $white;
+          font-size: $font-size;
+          font-weight: map-get($font-weight, "bold");
+        }
+
+        span {
+          color: $soft-pink;
+          font-size: $font-size;
+          font-weight: map-get($font-weight, "medium");
+        }
+      }
+    }
+
+    p {
+      color: $white;
+      font-size: $font-size;
+      font-weight: map-get($font-weight, "medium");
+      line-height: 140%;
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "md")) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+}
