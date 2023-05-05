@@ -12,7 +12,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-![ Finished  ](./images/screenshot.png)
+![ Finished  ](./images/screenshot.webp)
 
 ## My process
 

@@ -24,8 +24,9 @@ folders.forEach((element) => {
   newCard.className = "card";
 
   newContainerImg.className = "container-screen";
-  newImg.src = `./${element}/images/screenshot.png`;
+  newImg.src = `./${element}/images/screenshot.webp`;
   newImg.alt = `${element} screenshot`;
+  newImg.loading = "lazy";
 
   newContainerInfos.className = "container-infos";
   newTitle.innerText = element.replace(/-/g, " ");

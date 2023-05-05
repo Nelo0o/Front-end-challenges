@@ -12,7 +12,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Screenshot
 
-![ Finished  ](./images/screenshot.png)
+![ Finished  ](./images/screenshot.webp)
 
 ## My process
 

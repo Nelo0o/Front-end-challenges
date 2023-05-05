@@ -12,7 +12,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Screenshot
 
-![ Finished  ](./images/screenshot.png)
+![ Finished  ](./images/screenshot.webp)
 
 ## My process
 

@@ -12,7 +12,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
-![ Finished  ](./images/screenshot.png)
+![ Finished  ](./images/screenshot.webp)
 
 ## My process
 
