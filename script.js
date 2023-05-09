@@ -1,14 +1,15 @@
 const folders = [
+  "3-column-preview-card-component",
+  "Article-preview-component",
   "Interactive-rating-component",
   "NFT-preview-card-component",
   "Order-summary-component",
-  "Profile-card-component",
   "Product-preview-card-component",
+  "Profile-card-component",
   "QR-code-card",
   "Results-summary-component",
-  "Stats-preview-card-component",
   "Social-proof-section",
-  "3-column-preview-card-component",
+  "Stats-preview-card-component",
 ];
 
 folders.forEach((element) => {
